@@ -1,0 +1,11 @@
+interface:
+  display_name: "Walla"
+  short_description: "Create, publish, and analyze Walla forms"
+  default_prompt: "Use $walla to create, edit, publish, or analyze a Walla form."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "walla"
+      description: "Walla MCP server for forms, responses, automations, and custom fields"
+      transport: "streamable_http"
+      url: "https://app.walla.my/api/mcp"

@@ -1,0 +1,22 @@
+{
+  "name": "walla",
+  "displayName": "Walla",
+  "version": "1.0.1",
+  "description": "Create, edit, publish, and analyze Walla forms through the connected Walla MCP server.",
+  "author": {
+    "name": "Paprika Data Lab, Inc.",
+    "email": "cs@walla.my",
+    "url": "https://walla.my/"
+  },
+  "homepage": "https://docs.walla.my/",
+  "repository": "https://github.com/teamPaprika/walla-skills",
+  "license": "MIT",
+  "keywords": [
+    "walla",
+    "forms",
+    "surveys",
+    "responses",
+    "automations",
+    "mcp"
+  ]
+}

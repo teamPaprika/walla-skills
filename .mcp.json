@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "walla": {
+      "type": "http",
+      "url": "https://app.walla.my/api/mcp"
+    }
+  }
+}

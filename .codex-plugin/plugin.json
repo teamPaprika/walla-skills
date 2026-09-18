@@ -1,0 +1,44 @@
+{
+  "name": "walla",
+  "version": "1.0.1",
+  "description": "Create, edit, publish, and analyze Walla forms through the connected Walla MCP server.",
+  "author": {
+    "name": "Paprika Data Lab, Inc.",
+    "url": "https://walla.my/"
+  },
+  "homepage": "https://docs.walla.my/",
+  "repository": "https://github.com/teamPaprika/walla-skills",
+  "keywords": [
+    "walla",
+    "forms",
+    "surveys",
+    "responses",
+    "automations",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Walla",
+    "shortDescription": "Create, publish, and analyze Walla forms",
+    "longDescription": "Create and edit Walla forms in ChatGPT. Describe the customer feedback survey, event registration form, or team poll you need, and ChatGPT will set up the questions, conditional logic, pages, and brand colors. Request changes in the chat, then publish when the form is ready.\n\nYou can also create custom fields for question types that aren't built in. Describe what you need, such as a signature pad, product picker, or consent checklist. Preview the field before using it, and reuse it across your team's forms.\n\nOnce responses come in, ask ChatGPT to summarize them or find specific answers without opening a spreadsheet. Personal data is masked according to each form's settings. You can connect a webhook to send each new response directly to your own systems.",
+    "developerName": "Paprika Data Lab, Inc.",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://walla.my/",
+    "privacyPolicyURL": "https://home.walla.my/policy/privacy-latest",
+    "termsOfServiceURL": "https://home.walla.my/policy/terms-of-use-latest",
+    "defaultPrompt": [
+      "Create a customer feedback form in Walla and prepare it for review.",
+      "Summarize the latest responses to my Walla form.",
+      "Add conditional logic to an existing Walla form."
+    ],
+    "brandColor": "#2670FF",
+    "composerIcon": "./assets/walla-icon.svg",
+    "logo": "./assets/walla-logo.svg",
+    "screenshots": []
+  }
+}
