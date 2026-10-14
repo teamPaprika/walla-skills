@@ -18,8 +18,8 @@ Follow the state machine exactly:
 3. Treat the returned contract notes, SDK types, example, and file tree as authoritative. Do not invent SDK APIs, imports, or unsupported files.
 4. Implement the smallest complete field, then call `submit_custom_field`. The submission is a merge patch over the scaffold and must include `outputSchema.json`. A field that reads other fields' answers must also include `observeFields.json` with `{"mode":"configured"}`; without it, the field receives no form context.
 5. Poll `get_custom_field_build`. If `submit_custom_field` returns `try_again`, the build is busy; wait and repeat the same submit. On `build_failed`, use the returned errors to revise and resubmit.
-6. At `ready_to_review`, give the user the returned `previewUrl` and ask them to review the rendered field.
-7. Call `approve_custom_field_build` only after the user has approved the preview. Approval registers a reusable type and immutable version.
+6. At `ready_to_review`, offer the returned `previewUrl` for review. Preview review is recommended, not required.
+7. Before approval, call `get_custom_field_build` for the current state. If the state is `ready_to_review` and the user explicitly requests approval, call `approve_custom_field_build`. Do not require another preview confirmation. Approval registers a reusable type and immutable version.
 8. Attach the returned `customFieldTypeId` to a form with `form_apply_edits`, then verify with `get_form`.
 
 ## Data and privacy rules

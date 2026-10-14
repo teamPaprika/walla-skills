@@ -1,7 +1,7 @@
 {
   "name": "walla",
   "displayName": "Walla",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Create, edit, publish, and analyze Walla forms through the connected Walla MCP server.",
   "author": {
     "name": "Paprika Data Lab, Inc.",
